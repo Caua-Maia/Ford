@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.Navebar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+/* Estilo padrão para os links de navegação */
+.Navebar nav a {
+    text-decoration: none;
+    color: #1351d8;
+    padding: 0 15px;
+    font-weight: 1000;
+    transition: color 0.3s ease; /* Adiciona uma transição suave */
+}
+
+/* Efeito ao passar o mouse */
+.Navebar nav a:hover {
+    
+    color: #76a4ff; /* Cor mais escura para o efeito hover */
+}
+
+.Navebar div {
+    position: absolute;
+    left: 20px; /* Alterado para left para a logo ir para a esquerda */
+}
+
+
+main{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+
+/* Adicionando estilo ao footer */
+footer {
+    color: #ffffff;
+    display: flex;
+    gap: 15px; /* Adiciona espaçamento entre as imagens */
+    padding: 5px;
+    background-color: #1b357e; /* Cor de fundo escura */
+}
