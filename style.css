@@ -6,7 +6,7 @@ body {
     min-height: 100vh;
 }
 
-.content-wrap {
+.Tela {
     flex: 1;
 }
 
@@ -19,7 +19,12 @@ body {
     position: relative;
 }
 
+.Navebar div {
+    position: absolute;
+    left: 20px;
+}
 .Navebar nav a {
+    
     text-decoration: none;
     color: #1351d8;
     padding: 0 15px;
@@ -27,14 +32,12 @@ body {
     transition: color 0.3s ease;
 }
 
+
 .Navebar nav a:hover {
     color: #76a4ff; 
 }
 
-.Navebar div {
-    position: absolute;
-    left: 20px;
-}
+
 
 main { 
     display: flex;
@@ -61,6 +64,26 @@ footer {
     /* Adiciona espaçamento entre os itens */
     gap: 15px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Página de lançamento aqui */
