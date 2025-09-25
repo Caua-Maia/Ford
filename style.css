@@ -1,52 +1,130 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content-wrap {
+    flex: 1;
 }
 
 .Navebar {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 30px;
     background-color: #ffffff;
     position: relative;
 }
 
-/* Estilo padrão para os links de navegação */
 .Navebar nav a {
     text-decoration: none;
     color: #1351d8;
     padding: 0 15px;
     font-weight: 1000;
-    transition: color 0.3s ease; /* Adiciona uma transição suave */
+    transition: color 0.3s ease;
 }
 
-/* Efeito ao passar o mouse */
 .Navebar nav a:hover {
-    
-    color: #76a4ff; /* Cor mais escura para o efeito hover */
+    color: #76a4ff; 
 }
 
 .Navebar div {
     position: absolute;
-    left: 20px; /* Alterado para left para a logo ir para a esquerda */
+    left: 20px;
 }
 
-
-main{ 
+main { 
     display: flex;
     flex-direction: column;
     align-items: center;
-
-
 }
-
 
 /* Adicionando estilo ao footer */
 footer {
     color: #ffffff;
     display: flex;
-    gap: 15px; /* Adiciona espaçamento entre as imagens */
-    padding: 5px;
-    background-color: #1b357e; /* Cor de fundo escura */
+    align-items: center;
+    padding: 10px 10px;
+    background-color: #1b357e;
+    /* Essa regra já está correta para separar os blocos */
+    justify-content: space-between;
+}
+
+.footer-left {
+    /* Torna o grupo um contêiner flexível */
+    display: flex;
+    /* Adiciona a regra que centraliza os itens verticalmente */
+    align-items: center; 
+    /* Adiciona espaçamento entre os itens */
+    gap: 15px;
+}
+
+
+/* Página de lançamento aqui */
+
+.video-responsivo {
+    width: 100%;
+    height: 400px;
+}
+
+
+/* Novos estilos para os cards de carro */
+.car-card-table {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.car-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.car-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Contêiner para a caixa de seleção e o texto */
+.car-details {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.car-info-text {
+    text-align: left;
+}
+
+.car-name {
+    margin: 0;
+    font-weight: bold;
+    color: #1351d8; /* Cor azul para o nome do carro */
+}
+
+.car-value {
+    margin: 0;
+    color: #000; /* Cor preta para o valor */
+    font-weight: bold;
+}
+
+/* Aumenta o tamanho da caixa de seleção */
+.car-details input[type="checkbox"] {
+    width: 24px;
+    height: 24px;
 }
